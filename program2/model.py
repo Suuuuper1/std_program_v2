@@ -447,7 +447,6 @@ class FastRCNN(nn.Module):
             final_proposals.append(img_final_boxes)
             final_conf_probs.append(img_final_confidences.unsqueeze(1))
             final_class.append(img_final_classes.unsqueeze(1).to(torch.int64))
-            print(final_proposals)
 
         ##############################################################################
         #                               END OF YOUR CODE                             #
